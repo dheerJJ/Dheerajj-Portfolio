@@ -23,8 +23,8 @@ export default function Footer() {
           </div>
           <div className="col-md-4 d-flex justify-content-center justify-content-md-end">
             <div className="footer-social-links">
-              <a href="https://github.com/dheerajjkumawat" target="_blank" rel="noopener noreferrer" className="footer-social-btn" title="GitHub"><i className="bi bi-github"></i></a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="footer-social-btn" title="LinkedIn"><i className="bi bi-linkedin"></i></a>
+              <a href="https://github.com/dheerJJ" target="_blank" rel="noopener noreferrer" className="footer-social-btn" title="GitHub"><i className="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/dheerajj-kumawat-1b4b7b366/" target="_blank" rel="noopener noreferrer" className="footer-social-btn" title="LinkedIn"><i className="bi bi-linkedin"></i></a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer-social-btn" title="Twitter"><i className="bi bi-twitter"></i></a>
               <a href="mailto:dheerajjkumawat@gmail.com" className="footer-social-btn" title="Email"><i className="bi bi-envelope-fill"></i></a>
             </div>
