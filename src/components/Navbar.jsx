@@ -25,25 +25,25 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
             <li className="nav-item">
-              <a className="nav-link active" href="#hero" id="nav-hero" onClick={closeMenu}>Home</a>
+              <a className="nav-link active" href="/hero" id="nav-hero" onClick={closeMenu}>Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about" id="nav-about" onClick={closeMenu}>About</a>
+              <a className="nav-link" href="/about" id="nav-about" onClick={closeMenu}>About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#skills" id="nav-skills" onClick={closeMenu}>Skills</a>
+              <a className="nav-link" href="/skills" id="nav-skills" onClick={closeMenu}>Skills</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#education" id="nav-education" onClick={closeMenu}>Education</a>
+              <a className="nav-link" href="/education" id="nav-education" onClick={closeMenu}>Education</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#projects" id="nav-projects" onClick={closeMenu}>Projects</a>
+              <a className="nav-link" href="/projects" id="nav-projects" onClick={closeMenu}>Projects</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#services" id="nav-services" onClick={closeMenu}>Services</a>
+              <a className="nav-link" href="/services" id="nav-services" onClick={closeMenu}>Services</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact" id="nav-contact" onClick={closeMenu}>Contact</a>
+              <a className="nav-link" href="/contact" id="nav-contact" onClick={closeMenu}>Contact</a>
             </li>
           </ul>
         </div>
