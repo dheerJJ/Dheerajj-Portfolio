@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 const projectsData = [
   {
-    title: "E-Commerce Website",
+    title: "SmileCare Dental Clinic",
     category: "fullstack",
-    desc: "A rich features retail storefront featuring items catalog, filtering queries, visual shopping cart state management, and custom mock checkout gateways.",
+    desc: "A professional dental care platform with treatment listings, online appointment scheduling, service highlights, patient reviews, contact forms, and a clean responsive interface.",
     tech: ["React", "Node.js", "MongoDB", "Express"],
-    gitLink: "https://github.com/dheerajjkumawat",
-    demoLink: "#",
+    gitLink: "https://github.com/dheerJJ/Smile-dental",
+    demoLink: "https://smile-dental-pearl.vercel.app/",
     svg: (
       <svg viewBox="0 0 100 60" className="project-img-placeholder">
         <rect width="100" height="60" fill="url(#svgGrad)" opacity="0.85"/>
