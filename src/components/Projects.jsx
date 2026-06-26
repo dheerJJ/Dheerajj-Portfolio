@@ -17,8 +17,7 @@ const projectsData = [
         <circle cx="53" cy="34" r="1.5" fill="var(--accent-purple)"/>
         <line x1="38" y1="44" x2="62" y2="44" stroke="var(--text-muted)" strokeWidth="1" opacity="0.5"/>
       </svg>
-    ),
-    demoAlert: "Demo running on local development server. Port: 3000"
+    )
   },
   {
     title: "Student Management System",
@@ -36,8 +35,7 @@ const projectsData = [
         <path d="M 57 27 L 59 31" fill="none" stroke="var(--accent-purple)" strokeWidth="1"/>
         <line x1="38" y1="44" x2="62" y2="44" stroke="var(--text-muted)" strokeWidth="1" opacity="0.5"/>
       </svg>
-    ),
-    demoAlert: "Demo running on local development server. Port: 5000"
+    )
   },
   {
     title: "Portfolio Website",
@@ -55,8 +53,7 @@ const projectsData = [
         <circle cx="45" cy="30" r="1.5" fill="var(--accent-purple)"/>
         <rect x="48" y="29" width="7" height="2" fill="var(--svg-code-light)" opacity="0.8"/>
       </svg>
-    ),
-    demoAlert: "You are viewing this portfolio live right now!"
+    )
   },
   {
     title: "Task Management App",
@@ -72,8 +69,7 @@ const projectsData = [
         <path d="M 44 30 L 48 34 L 56 26" stroke="var(--accent-blue)" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
         <line x1="38" y1="44" x2="62" y2="44" stroke="var(--text-muted)" strokeWidth="1" opacity="0.5"/>
       </svg>
-    ),
-    demoAlert: "Demo running on local development server. Port: 3000"
+    )
   }
 ];
 
