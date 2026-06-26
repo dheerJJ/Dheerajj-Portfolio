@@ -77,12 +77,20 @@ export default function Projects() {
   const [activeFilter, setActiveFilter] = useState("all");
 
   const handleDemoClick = (e, project) => {
-    e.preventDefault();
+    // 1. Agar portfolio website h, toh smooth scroll up karo
     if (project.title === "Portfolio Website") {
+      e.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-      alert(project.demoAlert);
+      return;
     }
+
+    // 2. Agar demoLink unreleased '#' h, toh link block karo aur alert do
+    if (project.demoLink === "#" || !project.demoLink) {
+      e.preventDefault();
+      alert("Live demo coming soon for this project!");
+    }
+    
+    // Note: SmileCare jaise valid absolute URLs bina restriction ke naye tab me open ho jayenge.
   };
 
   return (
@@ -102,7 +110,7 @@ export default function Projects() {
           <button className={`project-filter-btn ${activeFilter === 'fullstack' ? 'active' : ''}`} onClick={() => setActiveFilter('fullstack')}>Full Stack</button>
         </div>
         
-        {/* Projects Grid - 4 columns on desktop in a single row */}
+        {/* Projects Grid */}
         <div className="row g-4 projects-grid" id="projectsGrid">
           {projectsData.map((project, index) => {
             const isVisible = activeFilter === 'all' || project.category === activeFilter;
@@ -118,7 +126,16 @@ export default function Projects() {
                     {project.svg}
                     <div className="project-img-overlay">
                       <a href={project.gitLink} target="_blank" rel="noopener noreferrer" className="project-overlay-btn" title="GitHub Code"><i className="bi bi-github"></i></a>
-                      <a href={project.demoLink} className="project-overlay-btn" title="Live Preview" onClick={(e) => handleDemoClick(e, project)}><i className="bi bi-box-arrow-up-right"></i></a>
+                      <a 
+                        href={project.demoLink} 
+                        target={project.demoLink !== "#" ? "_blank" : "_self"} 
+                        rel="noopener noreferrer" 
+                        className="project-overlay-btn" 
+                        title="Live Preview" 
+                        onClick={(e) => handleDemoClick(e, project)}
+                      >
+                        <i className="bi bi-box-arrow-up-right"></i>
+                      </a>
                     </div>
                   </div>
                   <div className="project-body">
@@ -131,7 +148,15 @@ export default function Projects() {
                     </div>
                     <div className="project-links">
                       <a href={project.gitLink} target="_blank" rel="noopener noreferrer" className="project-link-btn project-link-btn-secondary"><i className="bi bi-github"></i> Code</a>
-                      <a href={project.demoLink} className="project-link-btn project-link-btn-primary" onClick={(e) => handleDemoClick(e, project)}><i className="bi bi-globe"></i> Live Demo</a>
+                      <a 
+                        href={project.demoLink} 
+                        target={project.demoLink !== "#" ? "_blank" : "_self"} 
+                        rel="noopener noreferrer" 
+                        className="project-link-btn project-link-btn-primary" 
+                        onClick={(e) => handleDemoClick(e, project)}
+                      >
+                        <i className="bi bi-globe"></i> Live Demo
+                      </a>
                     </div>
                   </div>
                 </div>
